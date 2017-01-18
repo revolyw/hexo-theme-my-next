@@ -70,8 +70,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -153,7 +153,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/portrait.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -208,7 +208,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -260,13 +260,13 @@ mathjax:
 
 
 # Swiftype Search API Key
-#swiftype_key:
+swiftype_key: o38Yj4MhfLeNLEgpkTXx
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 244558d220e72839afa5633c6c823d79
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: willow
 
 # Disqus
 #disqus_shortname:
@@ -289,12 +289,12 @@ mathjax:
 ##  type: button
 
 # Share
-#jiathis:
+# jiathis: true
 # Warning: JiaThis does not support https.
-#add_this_id:
+# add_this_id: ra-587faa8d88e5c4cd
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -302,7 +302,7 @@ mathjax:
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-84521237-2
 
 # CNZZ count
 #cnzz_siteid:
@@ -343,9 +343,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 5HtGGz1WISMWSihCmLXJYHIr-gzGzoHsz
+  app_key: zN9Kms6uMb8IdIzbYbfVPuo0
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
