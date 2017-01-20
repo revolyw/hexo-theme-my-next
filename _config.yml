@@ -188,11 +188,11 @@ sidebar:
 
 
 # Blogrolls
-#links_title: Links
+links_title: Links
 #links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  self: http://blog.willowspace.cn/
 
 
 # ---------------------------------------------------------------
@@ -317,8 +317,8 @@ google_analytics: UA-84521237-2
 duoshuo_info:
   ua_enable: true
   admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+  user_id: 8824410
+  admin_nickname: Willow
 
 
 # Facebook SDK Support.
