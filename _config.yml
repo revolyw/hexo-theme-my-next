@@ -191,8 +191,8 @@ links_title: Links
 #links_layout: block
 #links_layout: inline
 links:
-  self: http://blog.willowspace.cn/
-
+  Self: http://blog.willowspace.cn
+  Chrisp: https://Chrisp7.github.com
 
 # ---------------------------------------------------------------
 # Post Settings
