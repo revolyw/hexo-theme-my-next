@@ -270,6 +270,7 @@
       {% else %}
         {{ post.content }}
       {% endif  %}
+      {{ config.licence }}
     </div>
 
     <div>
