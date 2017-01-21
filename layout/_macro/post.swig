@@ -266,11 +266,22 @@
           {% else %}
             {{ post.content }}
           {% endif %}
+          （完）
+          <blockquote class="blockquote-center">
+          <div style="font-weight: bold;
+                      border-bottom: 1px solid #eee;
+                      margin: 0 auto;
+                      width: 50%;">版权信息</div>
+          <div style="margin: 0 auto;width: 60%;">
+            <div style="text-align: left;">文章作者 ：{{ theme.author }}</div>
+            <div style="text-align: left;">发表时间 ：{{ date(post.date, config.date_format) }}</div>
+          </div>
+          {{ config.licence }}
+      </blockquote>
         {% endif %}
       {% else %}
         {{ post.content }}
       {% endif  %}
-      {{ config.licence }}
     </div>
 
     <div>
