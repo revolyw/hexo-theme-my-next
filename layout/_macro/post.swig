@@ -250,7 +250,7 @@
           <!--/noindex-->
         {% elif theme.auto_excerpt.enable %}
           {% set content = post.content | striptags %}
-          <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+          <div>
           {{ content.substring(0, theme.auto_excerpt.length) }}
           {% if content.length > theme.auto_excerpt.length %}...{% endif %}
           </div>
