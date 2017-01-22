@@ -1,7 +1,7 @@
 {% macro render(post, is_index, post_extra_class) %}
 
   {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
-
+  {% set randomNumBetween1to86 = Math.ceil(Math.random()*86) %}
   {% set post_class = 'post post-type-' + post.type | default('normal') %}
   {% set post_class = post_class + ' ' + post_extra_class | default('') %}
   {% if post.sticky > 0 %}
@@ -250,8 +250,10 @@
           <!--/noindex-->
         {% elif theme.auto_excerpt.enable %}
           {% set content = post.content | striptags %}
+          <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
           {{ content.substring(0, theme.auto_excerpt.length) }}
           {% if content.length > theme.auto_excerpt.length %}...{% endif %}
+          </div>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
@@ -265,20 +267,6 @@
           {% else %}
             {{ post.content }}
           {% endif %}
-          （完）
-          <blockquote class="blockquote-center">
-              <div style="font-weight: bold;
-                          border-bottom: 1px solid #eee;
-                          margin: 0 auto;
-                          width: 60%;">版权信息</div>
-              <div style="margin: 0 auto;width: 60%;">
-                <div style="text-align: left;">文章作者 ：{{ theme.author }}</div>
-                <div style="text-align: left;">发表时间 ：{{ date(post.date, config.date_format) }}</div>
-                <div style="text-align: left;"><!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="知识共享许可协议
-" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a> -->自由转载-非商用-非衍生-保持署名<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">（知识共享3.0许可证)</a>
-                </div>
-              </div>
-          </blockquote>
         {% endif %}
       {% else %}
         {{ post.content }}
@@ -296,6 +284,7 @@
                 </div>
               </div>
           </blockquote>
+          <img class="full-image" src="{{ url_for('/post_header_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
       {% endif  %}
     </div>
 

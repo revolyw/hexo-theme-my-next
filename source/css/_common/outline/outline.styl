@@ -5,7 +5,7 @@
 // =================================================
 
 
-html, body { height: 100%; }
+html, body { height: 100%; background:#F6F7FB; }
 
 .container {
   position: relative;
@@ -27,14 +27,18 @@ html, body { height: 100%; }
 
 // Main Section
 // --------------------------------------------------
-.main { padding-bottom: $footer-height + $gap-between-main-and-footer; }
+.main { padding-bottom: $footer-height + $gap-between-main-and-footer; background:#F6F7FB; }
 .main-inner {
   margin: 0 auto;
   width: $content-desktop;
+  padding:.5em 1.5em 3em 1.5em;
+  //四周阴影
+  box-shadow:5px 5px 10px #eee,-5px -5px 10px #eee;
 
   +desktop-large() {
     .container & { width: $content-desktop-large; }
   }
+  background:#fff; 
 }
 
 
