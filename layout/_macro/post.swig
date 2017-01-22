@@ -250,7 +250,7 @@
           <!--/noindex-->
         {% elif theme.auto_excerpt.enable %}
           {% set content = post.content | striptags %}
-          <div>
+          <div style="word-break:break-all;word-break:break-word;">
           {{ content.substring(0, theme.auto_excerpt.length) }}
           {% if content.length > theme.auto_excerpt.length %}&nbsp;&nbsp;...&nbsp;&nbsp;{% endif %}
           <!--noindex-->
