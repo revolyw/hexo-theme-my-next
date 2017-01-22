@@ -319,6 +319,7 @@ duoshuo_info:
   admin_enable: false
   user_id: 8824410
   admin_nickname: Willow
+  data_author_key: 1
 
 
 # Facebook SDK Support.

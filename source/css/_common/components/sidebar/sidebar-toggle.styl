@@ -5,10 +5,12 @@
   width: 15px;
   height: 15px;
   padding: 5px;
-  background: $black-deep;
+  background: $whitesmoke;
   line-height: 0;
   z-index: $zindex-5;
   cursor: pointer;
+  box-shadow:1px 1px 2px #eee,-1px -1px 2px #eee;
+  border-radius:5px;
   -webkit-transform: translateZ(0);
 
   +tablet() {
@@ -29,6 +31,7 @@
   width: 100%;
   background: white;
   margin-top: 3px;
+  background:$black-deep
 
   &:first-child { margin-top: 0; }
 }
