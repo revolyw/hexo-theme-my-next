@@ -252,15 +252,16 @@
           {% set content = post.content | striptags %}
           <div>
           {{ content.substring(0, theme.auto_excerpt.length) }}
-          {% if content.length > theme.auto_excerpt.length %}...{% endif %}
-          </div>
+          {% if content.length > theme.auto_excerpt.length %}&nbsp;&nbsp;...&nbsp;&nbsp;{% endif %}
           <!--noindex-->
-          <div class="post-button text-center">
+          <div class="post-button text-center" style="display:inline;">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
           <!--/noindex-->
+          </div>
+          
         {% else %}
           {% if post.type === 'picture' %}
             <a href="{{ url_for(post.path) }}">{{ post.content }}</a>
@@ -284,7 +285,7 @@
                 </div>
               </div>
           </blockquote>
-          <img class="full-image" src="{{ url_for('/post_header_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
+          <img class="full-image" src="{{ url_for('http://img.willowspace.cn/hexo_post_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
       {% endif  %}
     </div>
 
