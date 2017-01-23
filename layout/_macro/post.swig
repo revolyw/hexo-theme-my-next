@@ -277,7 +277,7 @@
                           border-bottom: 1px solid #eee;
                           margin: 0 auto;
                           width: 60%;">版权信息</div>
-              <div style="margin: 0 auto;width: 60%;">
+              <div style="margin: 0 auto;width: 65%;">
                 <div style="text-align: left;">文章作者 ：{{ theme.author }}</div>
                 <div style="text-align: left;">发表时间 ：{{ date(post.date, config.date_format) }}</div>
                 <div style="text-align: left;"><!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="知识共享许可协议
