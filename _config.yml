@@ -468,7 +468,9 @@ vendors:
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
 
-
+# 打赏
+wechatpay: http://img.willowspace.cn/hexo_reward_qrcode_img/wechatpay.jpeg
+alipay: http://img.willowspace.cn/hexo_reward_qrcode_img/alipay.jpeg
 
 # Assets
 css: css
