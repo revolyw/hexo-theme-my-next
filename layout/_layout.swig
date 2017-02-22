@@ -12,7 +12,6 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
-
   {% include '_scripts/third-party/analytics.swig' %}
 
   {% set container_class = "container one-collumn " %}
@@ -21,6 +20,35 @@
   {% endif %}
 
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
+ {#  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <!-- scripts -->
+  <script src="../../lib/particles-js/particles.js"></script>
+  <script src="../../lib/particles-js/js/app.js"></script>
+
+  <!-- stats.js -->
+  <script src="../../lib/particles-js/js/lib/stats.js"></script>
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+    document.getElementById("particles-js").style.backgroundImage = 'url("' + context.canvas.toDataURL() + '")';
+  </script> #}
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
