@@ -223,7 +223,7 @@ post_meta:
 wechat_subscriber:
   enabled: true
   qcode: /uploads/wechat-qcode.jpg
-  description: subscribe to willow's blog by scanning my public wechat account
+  #description: 
 
 
 
