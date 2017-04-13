@@ -223,7 +223,7 @@ post_meta:
 wechat_subscriber:
   enabled: true
   qcode: /uploads/wechat-qcode.jpg
-  #description: 
+  description: 微信订阅号 
 
 
 
