@@ -8,12 +8,13 @@ author: Author
 
 menu:
   home: Willow's space
-  archives: Archives
-  categories: Categories
+  archives: 最新文章
+  categories: 文章分类
   schedule: Schedule
-  tags: Tags
+  tags: 分类标签
   about: About
-  search: Search
+  # search: Search
+  search: 文章搜索
   sitemap: Sitemap
 
 sidebar:
@@ -56,10 +57,10 @@ counter:
     other: "%d posts in total."
 
 state:
-  posts: posts
+  posts: 博客
   pages: pages
-  tags: tags
-  categories: categories
+  tags: 标签
+  categories: 分类
 
 cheers:
   um: Um..
