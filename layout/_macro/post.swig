@@ -271,7 +271,7 @@
         {% endif %}
       {% else %}
         {{ post.content }}
-        （完）
+        （EOF）
           <blockquote class="blockquote-center">
               <div style="font-weight: bold;
                           border-bottom: 1px solid #eee;
