@@ -290,7 +290,7 @@ hypercomments_id: 95231
 ##  type: button
 
 # Share
-# jiathis: true
+jiathis: true
 # Warning: JiaThis does not support https.
 # add_this_id: ra-587faa8d88e5c4cd
 
