@@ -26,7 +26,6 @@
       <div id="uyan_frame"></div>
     {% endif %}
   </div>
-  <img class="full-image" src="{{ url_for('http://img.willowspace.cn/hexo_post_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
       <div>
       {% if not is_index %}
         {% include '../_macro/wechat-subscriber.swig' %}
@@ -37,4 +36,5 @@
         {% include '../_macro/reward.swig' %}
       {% endif %}
     </div>
+    <img class="full-image" src="{{ url_for('http://img.willowspace.cn/hexo_post_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
 {% endif %}
