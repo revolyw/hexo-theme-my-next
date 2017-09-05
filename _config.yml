@@ -267,7 +267,7 @@ mathjax:
 baidu_analytics: 244558d220e72839afa5633c6c823d79
 
 # Duoshuo ShortName
-duoshuo_shortname: willow
+#duoshuo_shortname: willow
 
 # Disqus
 #disqus_shortname:
@@ -295,7 +295,7 @@ duoshuo_shortname: willow
 # add_this_id: ra-587faa8d88e5c4cd
 
 # Share
-duoshuo_share: true
+duoshuo_share: false
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -315,12 +315,12 @@ google_analytics: UA-84521237-2
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 8824410
-  admin_nickname: Willow
-  data_author_key: 1
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: false
+#  user_id: 8824410
+#  admin_nickname: Willow
+#  data_author_key: 1
 
 
 # Facebook SDK Support.
