@@ -470,6 +470,7 @@ vendors:
   canvas_nest:
 
 # 打赏
+reward_comment: 写点什么 心里不慌
 wechatpay: http://img.willowspace.cn/hexo_reward_qrcode_img/wechatpay.jpeg
 alipay: http://img.willowspace.cn/hexo_reward_qrcode_img/alipay.jpeg
 

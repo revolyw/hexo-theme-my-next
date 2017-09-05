@@ -285,22 +285,8 @@
                 </div>
               </div>
           </blockquote>
-          <img class="full-image" src="{{ url_for('http://img.willowspace.cn/hexo_post_img/img_'+ randomNumBetween1to86 + '.jpg') }}">
       {% endif  %}
     </div>
-
-    <div>
-      {% if not is_index %}
-        {% include 'wechat-subscriber.swig' %}
-      {% endif %}
-    </div>
-
-    <div>
-      {% if not is_index %}
-        {% include 'reward.swig' %}
-      {% endif %}
-    </div>
-
 
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
@@ -339,5 +325,4 @@
       {% endif %}
     </footer>
   </article>
-
 {% endmacro %}
