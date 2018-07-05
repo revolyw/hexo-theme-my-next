@@ -276,10 +276,9 @@
               <div style="font-weight: bold;
                           border-bottom: 1px solid #eee;
                           margin: 0 auto;
-                          width: 60%;">版权信息</div>
+                          width: 60%;">{{ theme.author }}</div>
               <div style="margin: 0 auto;width: 65%;">
-                <div style="text-align: left;">文章作者 ：{{ theme.author }}</div>
-                <div style="text-align: left;">发表时间 ：{{ date(post.date, config.date_format) }}</div>
+                <div style="text-align: left;">发布日期 ：{{ date(post.date, config.date_format) }}</div>
                 <div style="text-align: left;"><!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="知识共享许可协议
 " style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a> -->自由转载-非商用-非衍生-保持署名<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">（知识共享3.0许可证)</a>
                 </div>
